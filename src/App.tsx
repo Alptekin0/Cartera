@@ -1,11 +1,11 @@
 import './App.css'
+import RouterConfig from './config/RouterConfig'
 
 function App() {
 
   return (
-    <div>
-      HELLO
-    </div>
+
+    <RouterConfig />
   )
 }
 

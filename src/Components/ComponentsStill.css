@@ -1,0 +1,229 @@
+body {
+     margin: 0;
+     padding: 0;
+}
+
+.girisYapContainer,
+.kaydolContainer {
+     width: 100vw;
+     height: 100vh;
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+
+     background-image: url(../images/background.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+
+.blurArea {
+     display: flex;
+     align-items: center;
+     justify-content: start;
+     flex-direction: column;
+     width: 60vw;
+     height: 60vh;
+     background-color: rgba(255, 255, 255, 0.092);
+     backdrop-filter: blur(20px);
+     -webkit-backdrop-filter: blur(10px);
+     border-radius: 20px;
+
+}
+
+.girisYapTitle {
+     font-size: 40px;
+     color: white;
+}
+
+.inputWrapper {
+     display: flex;
+     flex-direction: column;
+     margin-top: 10px;
+     margin-bottom: 30px;
+}
+
+.blurArea input {
+     height: 30px;
+     width: 20vw;
+     margin-top: 20px;
+     outline: none;
+     border: none;
+     border-bottom: 2px solid #ccc;
+     background: transparent;
+     transition: border-color 0.3s ease;
+     color: white;
+}
+
+.blurArea input:focus {
+     border-color: #3d0c19;
+}
+
+.buttonWrapper {
+     margin-top: 60px;
+}
+
+.GirisButton {
+     background: transparent;
+     color: white;
+     border: 2px solid white;
+     border-radius: 10px;
+     padding: 10px 22px;
+     font-size: 17px;
+     font-weight: 600;
+     transition: all 0.3s ease;
+     cursor: pointer;
+}
+
+.GirisButton:hover {
+     background: linear-gradient(to top, white 0%, white 100%);
+     color: black;
+     transition: .3s;
+     transform: translateY(-2px);
+}
+
+.KaydolButton {
+     margin-left: 40px;
+     display: inline-block;
+     text-decoration: none;
+     color: white;
+     transition: transform 0.2s ease;
+     cursor: pointer;
+
+}
+
+.KaydolButton:hover {
+     font-weight: 900;
+     transform: scale(1.1);
+}
+
+.error-message {
+     font-size: 14.5px;
+     color: red;
+}
+
+
+/*! HOME  *********************************************/
+
+.home-wrapper {
+     display: flex;
+     align-items: start;
+     justify-content: start;
+     flex-direction: row;
+}
+
+.sidebar-wrapper {
+     width: 23vw;
+     height: 100vh;
+     background-color: #3d0c19;
+     display: inline-block;
+}
+
+.sidebar-header {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     gap: 10px;
+     background-color: #b0b0b0;
+     height: 20vh;
+}
+
+.sidebar-text {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: row;
+     margin-bottom: 20px;
+}
+
+.sidebar-header img {
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     margin-right: 10px;
+}
+
+.sidebar-header p {
+     width: 15vw;
+     height: auto;
+     color: black;
+     font-size: 17px;
+     font-weight: 600;
+}
+
+.sidebar-body {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     flex-direction: column;
+     width: 100%;
+     height: 80%;
+     background-color: #9d9a9a;
+}
+
+.sidebar-body a {
+     text-decoration: none;
+     color: black;
+     font-weight: 600;
+     width: 23vw;
+     height: 8vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 35px;
+     font-size: 18px;
+}
+
+.sidebar-fotter {
+     width: 100%;
+     cursor: pointer;
+     text-align: end;
+     font-size: 22px;
+     margin-right: 25px;
+     margin-top: 2px;
+     margin-bottom: 10px;
+}
+
+
+.short-sidebar {
+     width: 5vw;
+     height: 100vh;
+     background-color: #9d9a9a;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+}
+
+.sagIkon {
+     font-size: 22px;
+     margin-top: 20px;
+     cursor: pointer;
+     color: black !important;
+}
+
+.sidebar-signOut-wrapper {
+     text-align: end;
+     display: flex;
+     align-items: end;
+     justify-content: end;
+     width: 21vw;
+}
+
+.sidebar-signOut {
+     color: black;
+     font-size: 35px;
+     margin-bottom: 15px;
+     cursor: pointer;
+}
+
+/*! HESABIM **********************************/
+
+.hesabim{
+     background-color: burlywood;
+     height: 100vh;
+     width: 77vw;
+}
