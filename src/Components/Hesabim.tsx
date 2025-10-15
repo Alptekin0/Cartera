@@ -10,8 +10,8 @@ function Hesabim() {
 
 
                <div className="hesabim">
-
                     <BakiyeBilgi />
+                    
                     <KartPanel />
 
                </div>

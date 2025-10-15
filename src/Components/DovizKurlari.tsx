@@ -29,8 +29,11 @@ function DovizKurlari() {
      return (
           <div className='home-wrapper'>
                <SideBar />
+
                <div className='doviz-panel'>
                     <div>
+                         <h1>DÖVİZ KURLARI</h1>
+                         <hr /> <br />
                          {data.map((element, index) => (
                               <div key={index} className="doviz-row">
                                    <p className="doviz-currency">{element.currency}</p>

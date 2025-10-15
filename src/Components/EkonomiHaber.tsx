@@ -59,6 +59,8 @@ function EkonomiHaber() {
       <SideBar />
 
       <div className="haber-container">
+        <h1>EKONOMİ HABERLERİ</h1>
+        <hr /> <br />
         {loading ? (
           <p style={{ textAlign: "center" }}>Haberler yükleniyor...</p>
         ) : (

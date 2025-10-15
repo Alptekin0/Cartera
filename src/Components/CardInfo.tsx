@@ -5,10 +5,6 @@ import { FaCheck } from "react-icons/fa6";
 import { useSelector } from "react-redux";
 import type { RootState } from "../store/store";
 
-
-
-
-
 function CardInfo() {
 
      const [copied, setCopied] = useState(false);
@@ -22,14 +18,7 @@ function CardInfo() {
           setTimeout(() => setCopied(false), 1500);
      };
 
-     const editMode = useSelector((state: RootState) => state.editMode.value);
 
-     console.log(editMode);
-
-     if (editMode) {
-          const card = document.querySelector(".card-wrapper") as HTMLElement;
-          card.style.backgroundColor = "red";
-     }
 
 
      return (
