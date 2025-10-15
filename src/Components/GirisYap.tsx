@@ -22,7 +22,7 @@ function GirisYap() {
                     toast.success("Giriş başarılı!", { autoClose: 2000 });
                     setTimeout(() => navigate("/Home"), 2400);
                } catch (error) {
-                    toast.error(error.message, { autoClose: 2500 });
+                    toast.error((error as Error).message, { autoClose: 2500 });
                }
           },
      });

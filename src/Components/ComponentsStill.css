@@ -222,8 +222,144 @@ body {
 
 /*! HESABIM **********************************/
 
-.hesabim{
-     background-color: burlywood;
+.hesabim {
+     display: flex;
+     align-items: center;
+     justify-content: start;
+     flex-direction: column;
      height: 100vh;
-     width: 77vw;
+     width: 75vw;
+}
+
+.bakiye-bilgi {
+     margin-top: 50px;
+}
+
+.kart-panel {
+     display: flex;
+     align-items: center;
+     justify-content: start;
+     flex-direction: column;
+     width: 55vw;
+     height: 70vh;
+     margin-top: 20px;
+     padding: 10px;
+     
+     overflow: hidden;
+     overflow-y: auto
+}
+
+.search-filter {
+     width: 100%;
+     height: 20%;
+     display: flex;
+     align-items: center;
+     justify-content: start;
+     flex-direction: row;
+}
+
+.search-filter input {
+     height: 30px;
+     width: 20vw;
+     outline: none;
+     border: none;
+     border-bottom: 2px solid #2d2c2c;
+     background: transparent;
+     transition: border-color 0.3s ease;
+     color: black;
+     margin-left: 20px;
+     font-size: 15px;
+     font-weight: 500;
+}
+
+
+.search-filter input:focus {
+     border-color: #7ff7df;
+}
+
+.filter-icon,
+.edit-icon {
+     font-size: 22px;
+     margin-left: 20px;
+     border: 1px solid black;
+     border-radius: 10%;
+     cursor: pointer;
+     padding: 5px;
+}
+
+
+.home-icon-wrapper {
+     margin-left: 30px;
+}
+
+.kart-ekle-button {
+     margin-left: auto;
+}
+
+.button {
+     background: transparent;
+     color: black;
+     border: 2px solid black;
+     border-radius: 10px;
+     padding: 10px 22px;
+     font-size: 17px;
+     font-weight: 600;
+     transition: all 0.3s ease;
+     cursor: pointer;
+}
+
+.button:hover {
+     background: linear-gradient(to top, black 0%, black 100%);
+     color: white;
+     transition: .3s;
+     transform: translateY(-2px);
+}
+
+
+.card-wrapper {
+     display: flex;
+     align-items: center;
+     justify-content: start;
+     flex-direction: row;
+
+     width: 100%;
+     height: 25%;
+     background-color: #e6fffa;
+     border-radius: 10px;
+     
+}
+
+.drag-icon {
+     height: 40%;
+     width: 6%;
+     margin-left: 20px;
+     cursor: grab;
+}
+
+.banka-kart-bilgi {
+     margin-left: 70px;
+     height: 70%;
+     width: 37%;
+     border-radius: 10px;
+     padding: 7px;
+     
+}
+
+.iban-bilgi {
+     font-size: 13px;
+     display: inline;
+}
+
+
+.copy-icon {
+     font-size: 14px;
+     cursor: pointer;
+     margin-left: 10px;
+     display: inline;
+}
+
+.card-bakiye-bilgi {
+     margin-left: 100px;
+     font-size: 16px;
+     font-weight: 600;
 }
