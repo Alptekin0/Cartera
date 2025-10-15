@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import '../App.css'
 import userImage from "../images/Cartera.ico";
 import { FaRegArrowAltCircleLeft } from "react-icons/fa";
@@ -9,7 +8,8 @@ import { auth } from '../config/firebase';
 import { useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import CustomHook from '../Hokks/CustomHook'
-
+import EkonomiHaber from './EkonomiHaber';
+import Profil from './Profil';
 
 
 
@@ -68,10 +68,10 @@ function SideBar() {
                     <div className="sidebar-body">
 
                          <div>
-                              <a href=""> Hesabım</a>
-                              <a href=""> Doviz Kurları</a>
-                              <a href=""> Ekonomi Haberler</a>
-                              <a href=""> Profil</a>
+                              <a onClick={() => navigate("/Home")}> Hesabım</a>
+                              <a onClick={() => navigate("/DovizKurlari")}> Doviz Kurları</a>
+                              <a onClick={() => navigate("/EkonomiHaber")}> Ekonomi Haberler</a>
+                              <a onClick={() => navigate("/Profil")}> Profil</a>
                          </div>
 
                          <div className='sidebar-signOut-wrapper'>

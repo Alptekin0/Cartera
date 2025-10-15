@@ -27,8 +27,8 @@ function CardInfo() {
      console.log(editMode);
 
      if (editMode) {
-         const card = document.querySelector(".card-wrapper") as HTMLElement;
-         card.style.backgroundColor = "red";
+          const card = document.querySelector(".card-wrapper") as HTMLElement;
+          card.style.backgroundColor = "red";
      }
 
 
