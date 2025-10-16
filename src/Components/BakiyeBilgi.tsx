@@ -1,4 +1,3 @@
-
 function BakiyeBilgi() {
      return (
           <div className="bakiye-bilgi">

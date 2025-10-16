@@ -2,10 +2,12 @@ import { RxDragHandleHorizontal } from "react-icons/rx";
 import { MdContentCopy } from "react-icons/md";
 import { useState } from "react";
 import { FaCheck } from "react-icons/fa6";
-import { useSelector } from "react-redux";
-import type { RootState } from "../store/store";
 
-function CardInfo() {
+interface CardInfoProps {
+     cardName: string;
+}
+
+function CardInfo({ cardName }: CardInfoProps) {
 
      const [copied, setCopied] = useState(false);
 
@@ -25,7 +27,7 @@ function CardInfo() {
           <div className='card-wrapper'>
                <RxDragHandleHorizontal className="drag-icon" />
                <div className="banka-kart-bilgi">
-                    <h3>YAPIKREDİ</h3>
+                    <h3>{cardName}</h3>
                     <p className="iban-bilgi">iban : <span className="iban">TR00 0000 0000 0000 0000 0000 00</span> </p>
                     <MdContentCopy title="Kopyala" className="copy-icon" onClick={copy} />  {copied ? <FaCheck style={{ marginLeft: "2px" }} /> : ""}
                </div>
